@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form>
+        <div class="nameContainer">
+          <div>
+            <label for="firstName">First Name </label>
+            <input type="text" id="firstName" name="firstName" />
+            <span class="error-message" id="errorFirstName"></span>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" />
+            <span class="error-message" id="errorLastName"></span>
+          </div>
+        </div>
+        <div>
+          <label for="emailAddress">Email Address</label>
+          <input type="email" id="emailAddress" name="emailAddress" />
+          <span class="error-message" id="errorEmail"></span>
+        </div>
+
+        <div class="queryDiv">
+          <p class="query">Query Type</p>
+
+          <div class="generalEnquiry">
+            <input
+              type="radio"
+              id="generalEnquiry"
+              name="queryType"
+              value="type1"
+            />
+            <label for="generalEnquiry">General Enquiry</label>
+          </div>
+          <div class="supportRequest">
+            <input
+              type="radio"
+              id="supportRequest"
+              name="queryType"
+              value="type2"
+            />
+            <label for="supportRequest">Support Request</label>
+          </div>
+          <span class="error-message" id="errorRadio"></span>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+          <span class="error-message" id="errorMessage"></span>
+        </div>
+        <div class="consent">
+          <div class="consentText">
+            <input type="checkbox" id="beingconsent" name="beingconsent" />
+            <label for="beingconsent"
+              >I consent to being contacted by the team</label
+            >
+          </div>
+          <span class="error-message" id="errorbeingconsent"></span>
+        </div>
+      </form>
+      <!-- <button type="submit" name="submit" class="submit" /> -->
+      <button type="submit" name="submit" class="submit" id="submit">
+        Submit
+      </button>
+    </main>
+    <script src="Javascript.js"></script>
+  </body>
+</html>
